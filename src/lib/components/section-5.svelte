@@ -3,7 +3,7 @@
         About Me
     </h3>
 
-    <img src="https://placehold.co/300x400" class="mx-auto mb-4" />
+    <img src="https://placehold.co/150x150" class="mx-auto mb-4" />
 
     <p class="mb-4">
         I conduct qualitative market research,
