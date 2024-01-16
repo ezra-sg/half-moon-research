@@ -49,6 +49,7 @@
     top: 0;
     padding: 8px;
     background: white;
+    z-index: 999;
 
     &__logo {
         opacity: 1;
