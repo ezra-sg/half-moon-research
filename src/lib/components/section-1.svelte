@@ -1,28 +1,28 @@
 <script lang="ts">
-    import logo from '$lib/assets/logo.svg';
+    import logo from '$lib/assets/logo--horizontal-color.svg';
+
+    import OutlineButton from '$lib/components/OutlineButton.svelte';
 </script>
 
-<div id="section-1" class="p-4 mt-8">
+<div id="section-1" class="p-4 h-[90vh] flex items-center flex-col justify-center">
     <img
-        class="w-64 m-auto mb-10"
+        class="mb-10"
         src="{logo}"
         alt="Half-moon Research logo"
     />
 
-    <h2 class="italic text-center mb-16">
-        For when you need to know why
-    </h2>
-
-    <h3 class="text-center mb-4 text-lg">
-        Who We Are
-    </h3>
-
-    <p>
+    <p class="text-white mb-4">
         Half-Moon Research is a research consulting
-        firm that specializes in <span class="font-bold">understanding “why”</span>,
-        by unifying qualitative and quantitative
-        approaches - especially in the biomedical and
+        firm that specializes in understanding <span class="font-bold">why</span>,
+        by <span class="font-bold">unifying qualitative and quantitative
+        approaches</span> - especially in the biomedical and
         social sciences.
     </p>
+
+    <hr class="w-[50%] text-glass border-glass bg-glass mb-4 self-start">
+
+    <div class="self-end">
+        <OutlineButton>Get in Touch</OutlineButton>
+    </div>
 </div>
 

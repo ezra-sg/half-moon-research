@@ -1,5 +1,5 @@
 <script lang="ts">
-    import logo from '$lib/assets/logo--horizontal.svg';
+    import logo from '$lib/assets/logo--horizontal-color.svg';
 	import { onDestroy, onMount } from 'svelte';
 
     let logoClass = 'c-nav__logo c-nav__logo--invisible';
@@ -29,7 +29,6 @@
     <img
         src="{logo}"
         alt="Half-Moon Research Logo - Horizontal"
-        width="240"
         class="{logoClass}"
         aria-hidden="{logoClass === 'c-nav__logo'}"
     />
@@ -42,16 +41,17 @@
 
 <style lang="scss">
 .c-nav {
-    position: sticky;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     top: 0;
-    padding: 8px;
-    background: white;
+    padding: 12px;
     z-index: 999;
+    background-color: var(--color-midnight-moon);
 
     &__logo {
+        height: 36px;
         opacity: 1;
         transition: opacity 0.3s ease;
 
@@ -61,19 +61,21 @@
     }
 
     &__hamburger-container {
-        padding: 14px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 48px;
-        width: 48px;
+        height: 36px;
+        width: 36px;
         cursor: pointer;
+        border: 1px solid var(--color-dragonfly-sun);
+        border-radius: 8px;
     }
 
     &__hamburger-line {
         height: 2px;
         width: 100%;
-        background-color: #000;
+        background-color: var(--color-dragonfly-sun);
     }
 }
 </style>
