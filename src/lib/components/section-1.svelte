@@ -1,10 +1,14 @@
 <script lang="ts">
     import logo from '$lib/assets/logo--horizontal-color.svg';
 
-    import OutlineButton from '$lib/components/OutlineButton.svelte';
+    import OutlineButton from '$lib/components/outline-button.svelte';
+
+    function goToContact() {
+        window.location.href = '#section-6';
+    }
 </script>
 
-<div id="section-1" class="p-4 h-[90vh] flex items-center flex-col justify-center">
+<div id="section-1" class="p-4 h-[90vh] pt-16 flex items-center flex-col justify-center">
     <img
         class="mb-10"
         src="{logo}"
@@ -22,7 +26,7 @@
     <hr class="w-[50%] text-glass border-glass bg-glass mb-4 self-start">
 
     <div class="self-end">
-        <OutlineButton>Get in Touch</OutlineButton>
+        <OutlineButton on:click={goToContact}>Get in Touch</OutlineButton>
     </div>
 </div>
 

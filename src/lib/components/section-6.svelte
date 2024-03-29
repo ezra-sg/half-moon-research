@@ -1,4 +1,4 @@
-<div id="section-5" class="p-4">
+<div id="section-6" class="p-4">
     <h3 class="text-center mb-4 text-lg">
         Get In Touch
     </h3>
