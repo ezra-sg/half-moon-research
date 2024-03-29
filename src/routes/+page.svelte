@@ -21,7 +21,7 @@
 </script>
 
 {#if !dev}
-    <div class="h-[100vh] w-[100vw] flex items-center flex-col justify-center text-center">
+    <div class="h-[100svh] w-[100svw] flex items-center flex-col justify-center text-center">
         <img
             src="{logo}"
             alt="Half-Moon Research Logo"
