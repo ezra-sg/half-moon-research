@@ -3,6 +3,12 @@
 	import { onDestroy, onMount } from 'svelte';
 
     let logoClass = 'c-nav__logo c-nav__logo--invisible';
+    let navClass = 'c-nav';
+
+    let scrollDirection = 'down';
+    let lastScrollTop = 0;
+
+    // eztodo add throttle to scroll handler
 
     function scrollHandler() {
         const scrollAmount = window?.scrollY ?? 0;
@@ -12,6 +18,16 @@
         } else {
             logoClass = 'c-nav__logo c-nav__logo--invisible';
         }
+
+        if (scrollAmount > lastScrollTop) {
+            scrollDirection = 'down';
+            navClass = 'c-nav c-nav--hidden';
+        } else {
+            scrollDirection = 'up';
+            navClass = 'c-nav';
+        }
+
+        lastScrollTop = scrollAmount;
     }
 
     onMount(() => {
@@ -25,10 +41,10 @@
     });
 </script>
 
-<div class="c-nav">
+<div class="{navClass}">
     <img
         src="{logo}"
-        alt="Half-Moon Research Logo - Horizontal"
+        alt="Half-Moon Research Logo"
         class="{logoClass}"
         aria-hidden="{logoClass === 'c-nav__logo'}"
     />
@@ -49,6 +65,11 @@
     padding: 12px;
     z-index: 999;
     background-color: var(--color-midnight-moon);
+    transition: transform 0.3s ease;
+
+    &--hidden {
+        transform: translateY(-100%);
+    }
 
     &__logo {
         height: 36px;
