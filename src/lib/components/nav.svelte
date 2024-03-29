@@ -5,7 +5,6 @@
     let logoClass = 'c-nav__logo c-nav__logo--invisible';
     let navClass = 'c-nav';
 
-    let scrollDirection = 'down';
     let lastScrollTop = 0;
 
     // eztodo add throttle to scroll handler
@@ -20,10 +19,8 @@
         }
 
         if (scrollAmount > lastScrollTop) {
-            scrollDirection = 'down';
             navClass = 'c-nav c-nav--hidden';
         } else {
-            scrollDirection = 'up';
             navClass = 'c-nav';
         }
 
