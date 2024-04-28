@@ -1,7 +1,9 @@
+<script lang="ts">
+    import SectionHeader from '$lib/components/section-header.svelte';
+</script>
+
 <div id="section-5" class="p-4">
-    <h3 class="text-center mb-4 text-lg">
-        About Me
-    </h3>
+    <SectionHeader text="About Us" />
 
     <img src="https://placehold.co/150x150" class="mx-auto mb-4" />
 

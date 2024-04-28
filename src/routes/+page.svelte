@@ -13,14 +13,21 @@
     import SectionFour from '$lib/components/section-4.svelte';
     import SectionFive from '$lib/components/section-5.svelte';
     import SectionSix from '$lib/components/section-6.svelte';
+	import { onMount } from 'svelte';
 
     // inject Vercel analytics
     inject({ mode: dev ? 'development' : 'production' });
     injectSpeedInsights();
 
+    let isDevMode = false;
+
+    onMount(() => {
+        let params = new URLSearchParams(document.location.search);
+        isDevMode = !!params.get('dev');
+    });
 </script>
 
-{#if !dev}
+{#if !dev && !isDevMode}
     <div class="h-[100svh] w-[100svw] flex items-center flex-col justify-center text-center">
         <img
             src="{logo}"

@@ -1,7 +1,9 @@
+<script lang="ts">
+    import SectionHeader from '$lib/components/section-header.svelte';
+</script>
+
 <div id="section-3" class="p-4">
-    <h3 class="text-center mb-4 text-lg">
-        Why Half-Moon Research?
-    </h3>
+    <SectionHeader text="Why Us?" />
 
     <p class="mb-4">
         Holistic research requires understanding both what happened (or could

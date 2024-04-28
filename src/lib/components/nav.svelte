@@ -93,7 +93,21 @@
         ulHiddenMobile = !ulHiddenMobile;
     }
 
-    // eztodo fix nav click scrolls but does not account for nav height
+    function handleLinkClick(link: string) {
+        const section = document.querySelector(link);
+
+        if (!section) {
+            return;
+        }
+
+        window.requestAnimationFrame(() => {
+            window.scrollTo({
+                top: Math.round(section.getBoundingClientRect().top) - 64
+            })
+
+            ulHiddenMobile = true;
+        })
+    }
 
     onMount(() => {
         if (typeof window === 'undefined') return;
@@ -158,8 +172,9 @@
             <li class="{liClasses} {active ? activeLiClasses : 'text-white'}">
                 <div aria-hidden="true" class="{liUnderlineClasses} {active ? activeLiUnderlineClasses : ''}"></div>
                 <a
-                    href="{link}"
+                    href="#"
                     class="w-full h-full flex items-center"
+                    on:click={() => handleLinkClick(link)}
                 >
                     {text}
                 </a>

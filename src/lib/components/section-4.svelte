@@ -1,7 +1,9 @@
+<script lang="ts">
+    import SectionHeader from '$lib/components/section-header.svelte';
+</script>
+
 <div id="section-4" class="p-4">
-    <h3 class="text-center mb-4 text-lg">
-        Our Process
-    </h3>
+    <SectionHeader text="Our Process" />
 
     <p class="mb-4">
         Half-Moon Research supports targeted approaches, or the full research process:
