@@ -36,11 +36,11 @@
 
         if (graphicScale > 0.5 && scrollDirection === 'down') {
             requestAnimationFrame(() => {
-                graphicScale = graphicScale - 0.005;
+                graphicScale = 0.5;
             });
         } else if (graphicScale < 1 && scrollDirection === 'up') {
             requestAnimationFrame(() => {
-                graphicScale = graphicScale + 0.005;
+                graphicScale = 1;
             });
         }
     }
@@ -83,7 +83,7 @@
             id={graphicId}
             src="https://www.shutterstock.com/shutterstock/photos/87459215/display_1500/stock-vector-silhouettes-of-tree-with-its-roots-87459215.jpg"
             alt="placeholder"
-            class="m-auto mb-12 origin-top invert"
+            class="m-auto mb-12 origin-top invert transition-all duration-700"
             style="width: {graphicScale * 80}%;"
         >
 
