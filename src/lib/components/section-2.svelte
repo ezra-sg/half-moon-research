@@ -35,9 +35,13 @@
         lastScrollY = window.scrollY;
 
         if (graphicScale > 0.5 && scrollDirection === 'down') {
-            graphicScale = graphicScale - 0.005;
+            requestAnimationFrame(() => {
+                graphicScale = graphicScale - 0.005;
+            });
         } else if (graphicScale < 1 && scrollDirection === 'up') {
-            graphicScale = graphicScale + 0.005;
+            requestAnimationFrame(() => {
+                graphicScale = graphicScale + 0.005;
+            });
         }
     }
 
