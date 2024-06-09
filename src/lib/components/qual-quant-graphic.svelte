@@ -1,8 +1,8 @@
 <script lang="ts">
-    import moonGraphic from '$lib/assets/qual-quant-graphic__moon.svg';
-    import starsGraphic from '$lib/assets/qual-quant-graphic__stars.svg';
-    import qualText from '$lib/assets/qual-quant-graphic__text--qual.svg?raw';
-    import quantText from '$lib/assets/qual-quant-graphic__text--quant.svg?raw';
+    import moonGraphic from '$lib/assets/graphic__qual-quant-moon.svg';
+    import starsGraphic from '$lib/assets/graphic__qual-quant-stars.svg';
+    import qualText from '$lib/assets/graphic__qual-quant-text--qual.svg?raw';
+    import quantText from '$lib/assets/graphic__qual-quant-text--quant.svg?raw';
 </script>
 
 <div class="relative h-48 w-48">

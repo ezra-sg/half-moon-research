@@ -4,7 +4,7 @@
   </defs>
   <text text-anchor="middle" letter-spacing="2.5" fill="white" font-size="14">
     <textPath href="#quantCirclePath" startOffset="65%">
-      QUANTITATIVE &#8226; <tspan fill="#FF9912">WHAT</tspan>
+      QUANTITATIVE <tspan fill="#FF9912">&#8226;</tspan> WHAT
     </textPath>
   </text>
 </svg>

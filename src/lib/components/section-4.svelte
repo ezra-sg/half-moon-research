@@ -1,17 +1,16 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
+    import puzzleGraphic from '$lib/assets/graphic__puzzle.svg?raw';
 </script>
 
 <div id="section-4" class="p-4">
-    <SectionHeader text="Our Process" />
+    <SectionHeader text="Working Together" />
 
     <p class="mb-4">
-        Half-Moon Research supports targeted approaches, or the full research process:
+        Half-Moon Research supports both targeted approaches and the full research process:
     </p>
 
-    <div class="relative h-96">
-        <img src="https://placehold.co/150x150" class="absolute top-16" />
-        <img src="https://placehold.co/150x150" class="absolute right-0" />
-        <img src="https://placehold.co/150x150" class="absolute top-48 right-8" />
+    <div class="w-full">
+        {@html puzzleGraphic}
     </div>
 </div>
