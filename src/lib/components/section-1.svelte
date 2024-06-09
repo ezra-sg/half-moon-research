@@ -8,7 +8,7 @@
     }
 </script>
 
-<div id="section-1" class="p-4 h-[90vh] pt-16 flex items-center flex-col justify-center">
+<div id="section-1" class="p-4 h-[80vh] pt-16 flex items-center flex-col justify-center">
     <img
         class="mb-10"
         src="{logo}"
