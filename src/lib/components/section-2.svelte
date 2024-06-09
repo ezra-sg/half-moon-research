@@ -1,11 +1,15 @@
 <script lang="ts">
     import { onDestroy, onMount } from 'svelte';
 
+    import throttle from '$lib/utils/throttle';
+
     import SectionHeader from '$lib/components/section-header.svelte';
+    import InfoCard from '$lib/components/info-card.svelte';
 
     const graphicId = 'section-2-graphic-lg';
 
     let observer: IntersectionObserver | null = null;
+    let throttledScrollHandler = throttle(scrollHandler, 100);
     let scrollHandlerAttached = false;
     let graphicScale = 1;
     let lastScrollY = 0;
@@ -49,9 +53,9 @@
         let callback: IntersectionObserverCallback = (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting && scrollHandlerAttached === false) {
-                    document.addEventListener('scroll', scrollHandler);
+                    document.addEventListener('scroll', throttledScrollHandler);
                 } else if (!entry.isIntersecting) {
-                    document.removeEventListener('scroll', scrollHandler);
+                    document.removeEventListener('scroll', throttledScrollHandler);
                     scrollHandlerAttached = false;
                 }
             });
@@ -69,7 +73,7 @@
 
     onDestroy(() => {
         if (scrollHandlerAttached) {
-            document.removeEventListener('scroll', scrollHandler);
+            document.removeEventListener('scroll', throttledScrollHandler);
         }
     });
 
@@ -89,11 +93,7 @@
 
         <ul class="px-4">
             {#each items as item}
-                <li class="border-l-[1px] border-glass mb-8 pl-4 flex gap-4 items-center">
-                    <img src={item.icon} alt="placeholder">
-
-                    { item.text }
-                </li>
+                <InfoCard text={item.text} image={item.icon} imageSize={48} />
             {/each}
         </ul>
     </div>
