@@ -49,7 +49,6 @@
     <SectionSix />
 {/if}
 
-<!-- eztodo add footer -->
 <footer>
     <div class="p-4 text-center">
         <p>
