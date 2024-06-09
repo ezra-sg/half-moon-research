@@ -11,7 +11,6 @@ export default {
       breeze: '#3D87A3',
       dragonfly: '#FF9912',
       glass: '#BAE5FF',
-      // ...
     }
   },
   plugins: [],

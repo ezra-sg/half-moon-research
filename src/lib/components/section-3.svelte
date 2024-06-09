@@ -1,45 +1,39 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
+    import QualQuantGraphic from '$lib/components/qual-quant-graphic.svelte';
+    import InfoCard from '$lib/components/info-card.svelte';
+
+    const items = [{
+        text: 'Deep biochemical background',
+        icon: 'https://placehold.co/64x64',
+    }, {
+        text: 'Understanding preferences, heuristics, and point of view of healthcare professionals',
+        icon: 'https://placehold.co/64x64',
+    }, {
+        text: 'Comprehensive interviewing skills, including direct technical probing and indirect projective techniques',
+        icon: 'https://placehold.co/64x64',
+    }, {
+        text: 'Background in pre-existing and emerging market dynamics',
+        icon: 'https://placehold.co/64x64',
+    }];
 </script>
 
 <div id="section-3" class="p-4">
     <SectionHeader text="Why Us?" />
 
-    <p class="mb-4">
-        Holistic research requires understanding both what happened (or could
-        happen) and also why it did (or might) happen.
-
-        Half-Moon Research excels at balancing these core research needs, by
-        unifying expertise over the entire landscape.
+    <p class="mb-8">
+        Half-Moon Research excels at balancing understanding both <span class="font-bold">what</span> and <span class="font-bold">why</span> by unifying expertise over the entire landscape.
     </p>
 
-    <img src="https://placehold.co/300x300" class="mx-auto mb-4" />
+    <div class="flex justify-center mb-8">
+        <QualQuantGraphic />
+    </div>
 
     <p class="mb-4">
-        This means bringing together:
+        We bring together:
     </p>
 
-    <ul class="pl-4">
-        <li class="list-disc">
-            Deep biochemical background
-        </li>
-
-        <li class="list-disc">
-            Understanding preferences,
-            heuristics, and point of view of
-            healthcare professionals
-        </li>
-
-        <li class="list-disc">
-            Comprehensive interviewing
-            skills, including direct
-            technical probing and indirect
-            projective techniques
-        </li>
-
-        <li class="list-disc">
-            Background in pre-existing
-            and emerging market dynamics
-        </li>
-    </ul>
+    {#each items as item}
+        <InfoCard text={item.text} image={item.icon} imageSize={48} />
+    {/each}
 </div>

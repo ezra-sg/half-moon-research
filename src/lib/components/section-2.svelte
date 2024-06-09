@@ -91,11 +91,9 @@
             style="width: {graphicScale * 80}%;"
         >
 
-        <ul class="px-4">
-            {#each items as item}
-                <InfoCard text={item.text} image={item.icon} imageSize={48} />
-            {/each}
-        </ul>
+        {#each items as item}
+            <InfoCard text={item.text} image={item.icon} imageSize={48} />
+        {/each}
     </div>
 </div>
 

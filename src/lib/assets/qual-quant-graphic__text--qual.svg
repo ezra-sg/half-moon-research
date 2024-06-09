@@ -1,0 +1,11 @@
+<svg viewBox="10 10 180 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <path id="qualCirclePath" d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0" />
+  </defs>
+  <text text-anchor="middle" letter-spacing="2.5" fill="white" font-size="13">
+    <textPath href="#qualCirclePath" startOffset="35%">
+      QUALITATIVE &#8226; <tspan fill="#FF9912">WHY</tspan>
+    </textPath>
+  </text>
+</svg>
+

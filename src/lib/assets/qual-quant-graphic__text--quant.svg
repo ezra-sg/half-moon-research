@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <path id="quantCirclePath" d="M 100, 100 m 75, 0 a 75,75 0 1,1 -150,0 a 75,75 0 1,1 150,0" />
+  </defs>
+  <text text-anchor="middle" letter-spacing="2.5" fill="white" font-size="14">
+    <textPath href="#quantCirclePath" startOffset="65%">
+      QUANTITATIVE &#8226; <tspan fill="#FF9912">WHAT</tspan>
+    </textPath>
+  </text>
+</svg>
