@@ -3,7 +3,7 @@
 </script>
 
 <div id="section-5" class="p-4">
-    <SectionHeader text="About Us" />
+    <SectionHeader text="About" />
 
     <img src="https://placehold.co/150x150" class="mx-auto mb-4" />
 

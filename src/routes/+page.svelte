@@ -19,6 +19,8 @@
     inject({ mode: dev ? 'development' : 'production' });
     injectSpeedInsights();
 
+    const year = new Date().getFullYear();
+
     let isDevMode = false;
 
     onMount(() => {
@@ -48,3 +50,10 @@
 {/if}
 
 <!-- eztodo add footer -->
+<footer>
+    <div class="p-4 text-center">
+        <p>
+            &copy; {year} Half-Moon Research
+        </p>
+    </div>
+</footer>

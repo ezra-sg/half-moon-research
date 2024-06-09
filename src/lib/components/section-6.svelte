@@ -1,26 +1,27 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
+    import TextInput from '$lib/components/text-input.svelte';
+	import OutlineButton from '$lib/components/outline-button.svelte';
 </script>
 
-<div id="section-6" class="p-4">
+<div id="section-6" class="p-4 mb-12">
     <SectionHeader text="Get in touch" />
 
-    <label for="contact-form-name">
-        Name
-    </label>
-    <input id="contact-form-name" type="text" class="mb-4 border-black border-[1px] w-full" />
+    <div class="mb-4">
+        <TextInput label="Name" id="contact-form-name" />
+    </div>
 
+    <div class="mb-4">
+        <TextInput label="Email" id="contact-form-email" type="email" />
+    </div>
 
-    <label for="contact-form-email">
-        Email
-    </label>
-    <input id="contact-form-email" type="text" class="mb-4 border-black border-[1px] w-full" />
+    <div class="mb-4">
+        <TextInput label="Message" id="contact-form-message" isTextarea={true} />
+    </div>
 
-    <label for="contact-form-message">
-        Message
-    </label>
-    <input id="contact-form-message" type="textarea" class="border-black border-[1px] w-full h-64 mb-4" />
     <div class="flex justify-end">
-        <button class="border-black border-[1px] p-2">Submit</button>
+        <OutlineButton>
+            Send
+        </OutlineButton>
     </div>
 </div>
