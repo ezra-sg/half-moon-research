@@ -30,6 +30,11 @@
     }];
 
     function scrollHandler() {
+        if (window.innerWidth > 640) {
+            graphicScale = 1;
+            return;
+        }
+
         if (lastScrollY > window.scrollY) {
             scrollDirection = 'up';
         } else {
@@ -79,21 +84,23 @@
 
 </script>
 
-<div id="section-2" class="p-4 mb-12">
-    <div class="sticky top-6">
-        <SectionHeader text="What We Bring" />
+<div id="section-2" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col md:snap-y md:snap-mandatory">
+    <SectionHeader text="What We Bring" />
 
+    <div class="md:flex md:flex-row-reverse md:w-max md:mx-auto md:gap-12">
         <img
             id={graphicId}
             src="https://www.shutterstock.com/shutterstock/photos/87459215/display_1500/stock-vector-silhouettes-of-tree-with-its-roots-87459215.jpg"
             alt="placeholder"
-            class="m-auto mb-12 origin-top invert transition-all duration-700"
+            class="m-auto mb-12 md:mb-0 origin-top invert transition-all duration-700 max-w-72"
             style="width: {graphicScale * 80}%;"
         >
 
-        {#each items as item}
-            <InfoCard text={item.text} image={item.icon} imageSize={48} />
-        {/each}
+        <div class="max-w-96 md:my-auto mx-auto">
+            {#each items as item, index}
+                <InfoCard text={item.text} image={item.icon} imageSize={48} noMarginBottom={index === items.length - 1} />
+            {/each}
+        </div>
     </div>
 </div>
 

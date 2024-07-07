@@ -41,12 +41,15 @@
     </div>
 {:else}
     <Nav />
-    <SectionOne />
-    <SectionTwo />
-    <SectionThree />
-    <SectionFour />
-    <SectionFive />
-    <SectionSix />
+
+    <div class="max-w-screen-xl m-auto md:p-6">
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+        <SectionSix />
+    </div>
 {/if}
 
 <footer>

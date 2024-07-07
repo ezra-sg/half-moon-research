@@ -18,22 +18,31 @@
     }];
 </script>
 
-<div id="section-3" class="p-4 mb-12">
+<div id="section-3" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col md:snap-y md:snap-mandatory">
     <SectionHeader text="Why Us?" />
 
-    <p class="mb-8">
+    <p class="mb-8 max-w-xl mx-auto">
         Half-Moon Research excels at balancing understanding both <span class="font-bold">what</span> and <span class="font-bold">why</span> by unifying expertise over the entire landscape.
     </p>
 
-    <div class="flex justify-center mb-8">
-        <QualQuantGraphic />
+    <div class="md:flex md:flex-row-reverse md:justify-center md:gap-12">
+        <div class="flex justify-center mb-8">
+            <QualQuantGraphic />
+        </div>
+
+        <div>
+            <p class="mb-4">
+                We bring together:
+            </p>
+
+            <div class="max-w-96">
+                {#each items as item}
+                    <InfoCard text={item.text} image={item.icon} imageSize={48} />
+                {/each}
+            </div>
+        </div>
     </div>
 
-    <p class="mb-4">
-        We bring together:
-    </p>
 
-    {#each items as item}
-        <InfoCard text={item.text} image={item.icon} imageSize={48} />
-    {/each}
+
 </div>
