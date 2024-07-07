@@ -9,7 +9,7 @@
     }
 </script>
 
-<div id="section-1" class="p-4 h-[100svh] pt-16 flex items-center flex-col justify-center relative">
+<div id="section-1" class="p-4 mb-12 h-[100svh] pt-16 flex items-center flex-col justify-center relative">
     <img
         class="mb-10"
         src="{logo}"

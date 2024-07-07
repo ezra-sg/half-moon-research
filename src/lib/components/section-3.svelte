@@ -18,7 +18,7 @@
     }];
 </script>
 
-<div id="section-3" class="p-4">
+<div id="section-3" class="p-4 mb-12">
     <SectionHeader text="Why Us?" />
 
     <p class="mb-8">
