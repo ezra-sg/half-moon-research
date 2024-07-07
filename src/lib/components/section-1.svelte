@@ -15,7 +15,9 @@
     let scrollIndicator: null | HTMLElement = null;
 
     const throttledScrollHandler = throttle(() => {
-        if (window.scrollY > 200 && scrollIndicator) {
+        const heightThreshold = window.innerWidth > 640 ? 200 : 100;
+
+        if (window.scrollY > heightThreshold && scrollIndicator) {
             scrollIndicator.style.opacity = '0';
         } else if (scrollIndicator) {
             scrollIndicator.style.opacity = '1';
