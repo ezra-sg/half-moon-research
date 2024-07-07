@@ -59,7 +59,7 @@
         <OutlineButton on:click={goToContact}>Get in Touch</OutlineButton>
     </div>
 
-    <div id="scroll-indicator" class="rounded-full border-dragonfly border-[1px] border-solid h-[32px] w-[32px] absolute bottom-20 motion-safe:animate-bounce transition-all duration-300 opacity-100">
+    <div id="scroll-indicator" class="rounded-full border-dragonfly border-[1px] border-solid h-[32px] w-[32px] absolute bottom-10 md:bottom-20 motion-safe:animate-bounce transition-all duration-300 opacity-100">
         <img src={chevron} alt="chevron icon" height="24" width="24" aria-hidden="true" class="absolute top-0 right-0 bottom-0 left-0 m-auto -translate-y-0.5">
         <img src={chevron} alt="chevron icon" height="24" width="24" aria-hidden="true" class="absolute top-0 right-0 bottom-0 left-0 m-auto translate-y-0.5">
     </div>
