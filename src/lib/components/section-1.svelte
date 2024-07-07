@@ -1,5 +1,6 @@
 <script lang="ts">
     import logo from '$lib/assets/logo--horizontal-color.svg';
+    import chevron from '$lib/assets/icon--chevron.svg';
 
     import OutlineButton from '$lib/components/outline-button.svelte';
 
@@ -8,7 +9,7 @@
     }
 </script>
 
-<div id="section-1" class="p-4 h-[80vh] pt-16 flex items-center flex-col justify-center">
+<div id="section-1" class="p-4 h-[100svh] pt-16 flex items-center flex-col justify-center relative">
     <img
         class="mb-10"
         src="{logo}"
@@ -27,6 +28,11 @@
 
     <div class="self-end">
         <OutlineButton on:click={goToContact}>Get in Touch</OutlineButton>
+    </div>
+
+    <div class="rounded-full border-dragonfly border-[1px] border-solid h-[32px] w-[32px] absolute bottom-8 motion-safe:animate-bounce">
+        <img src={chevron} alt="chevron icon" height="24" width="24" aria-hidden="true" class="absolute top-0 right-0 bottom-0 left-0 m-auto -translate-y-0.5">
+        <img src={chevron} alt="chevron icon" height="24" width="24" aria-hidden="true" class="absolute top-0 right-0 bottom-0 left-0 m-auto translate-y-0.5">
     </div>
 </div>
 
