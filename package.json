@@ -36,6 +36,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.3"
   }

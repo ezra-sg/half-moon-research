@@ -110,7 +110,10 @@
     }
 
     onMount(() => {
-        if (typeof window === 'undefined') return;
+        if (typeof window === 'undefined') {
+            return;
+        }
+
         window?.addEventListener('scroll', scrollHandler);
 
         window?.addEventListener('click', clickawayHandler);
