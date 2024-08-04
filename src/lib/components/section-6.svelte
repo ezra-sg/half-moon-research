@@ -47,28 +47,30 @@
     }
 </script>
 
-<div id="section-6" class="p-4 mb-12">
+<div id="section-6" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col md:snap-y md:snap-mandatory">
     <SectionHeader text="Get in touch" />
 
-    <div class="mb-4">
-        <TextInput label="Name" id="contact-form-name" bind:value={$name} />
-    </div>
+    <div class="w-full max-w-[600px] mx-auto">
+        <div class="mb-4">
+            <TextInput label="Name" id="contact-form-name" bind:value={$name} />
+        </div>
 
-    <div class="mb-4">
-        <TextInput label="Email" id="contact-form-email" type="email" bind:value={$email} />
-    </div>
+        <div class="mb-4">
+            <TextInput label="Email" id="contact-form-email" type="email" bind:value={$email} />
+        </div>
 
-    <div class="mb-4">
-        <TextInput label="Message" id="contact-form-message" isTextarea={true} bind:value={$message} />
-    </div>
+        <div class="mb-4">
+            <TextInput label="Message" id="contact-form-message" isTextarea={true} bind:value={$message} />
+        </div>
 
-    <div class="flex justify-end mb-4">
-        <OutlineButton on:click={sendEmail} disabled={sendLoading}>
-            Send
-        </OutlineButton>
-    </div>
+        <div class="flex justify-end mb-4">
+            <OutlineButton on:click={sendEmail} disabled={sendLoading}>
+                Send
+            </OutlineButton>
+        </div>
 
-    {#if sendStatusMessage}
-        <p class="text-dragonfly">{sendStatusMessage}</p>
-    {/if}
+        {#if sendStatusMessage}
+            <p class="text-dragonfly">{sendStatusMessage}</p>
+        {/if}
+    </div>
 </div>
