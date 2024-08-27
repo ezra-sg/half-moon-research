@@ -13,7 +13,7 @@
 
     let logoClass = invisibleLogoClasses;
     let navClass = navClasses;
-    let ulClass = 'hidden md:flex';
+    let ulClass = 'hidden lg:flex';
     let activeLi = 0;
 
     let intersectionObserver: IntersectionObserver | null = null;
@@ -24,7 +24,7 @@
     let ulHiddenMobile = true;
     let lastScrollTop = 0;
 
-    $: ulClass = ulHiddenMobile ? 'hidden md:flex' : 'flex';
+    $: ulClass = ulHiddenMobile ? 'hidden lg:flex' : 'flex';
 
     $: {
         liElements = [{
@@ -154,7 +154,7 @@
         class="{logoClass}"
     />
     <div
-        class="p-2 flex flex-col justify-between h-9 w-9 cursor-pointer border-[1px] border-dragonfly rounded-md md:hidden"
+        class="p-2 flex flex-col justify-between h-9 w-9 cursor-pointer border-[1px] border-dragonfly rounded-md lg:hidden"
         role="button"
         tabindex="0"
         aria-label="toggle menu"
@@ -170,7 +170,7 @@
         <div class="h-0.5 w-full bg-dragonfly"></div>
     </div>
 
-    <ul class="{ulClass} list-none absolute top-full left-0 right-0 flex-col bg-midnight py-4 shadow-md border-t-[1px] border-slate-800 md:flex-row md:bg-none md:py-0 md:static md:border-none md:shadow-none">
+    <ul class="{ulClass} list-none absolute top-full left-0 right-0 flex-col bg-midnight py-4 shadow-md border-t-[1px] border-slate-800 lg:flex-row lg:bg-none lg:py-0 lg:static lg:border-none lg:shadow-none">
         {#each liElements as { text, link, active }}
             <li class="{liClasses} {active ? activeLiClasses : 'text-white'}">
                 <div aria-hidden="true" class="{liUnderlineClasses} {active ? activeLiUnderlineClasses : ''}"></div>
