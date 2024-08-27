@@ -1,9 +1,8 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
-    import ScrollIndicator from '$lib/components/scroll-indicator.svelte';
 </script>
 
-<div id="section-5" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col md:snap-y md:snap-mandatory relative">
+<div id="section-5" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
     <SectionHeader text="About" />
 
     <img src="https://placehold.co/150x150" class="mx-auto mb-10" />
@@ -26,6 +25,4 @@
         shared understanding of their priorities,
         motivations, and concerns.
     </p>
-
-    <ScrollIndicator />
 </div>

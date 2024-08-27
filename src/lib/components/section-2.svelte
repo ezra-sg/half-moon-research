@@ -5,7 +5,6 @@
 
     import SectionHeader from '$lib/components/section-header.svelte';
     import InfoCard from '$lib/components/info-card.svelte';
-    import ScrollIndicator from '$lib/components/scroll-indicator.svelte';
 
     const graphicId = 'section-2-graphic-lg';
 
@@ -85,7 +84,7 @@
 
 </script>
 
-<div id="section-2" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col relative snap-center">
+<div id="section-2" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
     <SectionHeader text="What We Bring" />
 
     <div class="md:flex md:flex-row-reverse md:w-max md:mx-auto md:gap-12">
@@ -103,7 +102,5 @@
             {/each}
         </div>
     </div>
-
-    <ScrollIndicator />
 </div>
 

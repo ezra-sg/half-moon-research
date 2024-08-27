@@ -2,7 +2,6 @@
     import SectionHeader from '$lib/components/section-header.svelte';
     import QualQuantGraphic from '$lib/components/qual-quant-graphic.svelte';
     import InfoCard from '$lib/components/info-card.svelte';
-    import ScrollIndicator from '$lib/components/scroll-indicator.svelte';
 
     const items = [{
         text: 'Deep biochemical background',
@@ -19,7 +18,7 @@
     }];
 </script>
 
-<div id="section-3" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col md:snap-y md:snap-mandatory relative">
+<div id="section-3" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
     <SectionHeader text="Why Us?" />
 
     <p class="mb-8 max-w-xl mx-auto">
@@ -43,6 +42,4 @@
             </div>
         </div>
     </div>
-
-    <ScrollIndicator />
 </div>

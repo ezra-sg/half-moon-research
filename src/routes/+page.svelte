@@ -42,7 +42,7 @@
 {:else}
     <Nav />
 
-    <div class="max-w-screen-xl m-auto md:p-6 snap-y snap-mandatory">
+    <div class="max-w-screen-xl m-auto md:p-6 ">
         <SectionOne />
         <SectionTwo />
         <SectionThree />
