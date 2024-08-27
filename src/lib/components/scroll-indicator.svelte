@@ -3,7 +3,7 @@
 
     import throttle from '$lib/utils/throttle';
 
-    import chevron from '$lib/assets/icon--chevron.svg';
+    import chevron from '$lib/assets/icon__chevron.svg';
 
     let indicatorId: null | string = null;
     let scrollIndicator: null | HTMLElement = null;

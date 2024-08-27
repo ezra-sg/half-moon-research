@@ -2,6 +2,11 @@
     import { onDestroy, onMount } from 'svelte';
 
     import throttle from '$lib/utils/throttle';
+    import treeGraphic from '$lib/assets/graphic__tree.svg';
+    import leafIcon from '$lib/assets/icons__leaves.svg';
+    import branchIcon from '$lib/assets/icons__branch.svg';
+    import trunkIcon from '$lib/assets/icons__trunk.svg';
+    import rootsIcon from '$lib/assets/icons__roots.svg';
 
     import SectionHeader from '$lib/components/section-header.svelte';
     import InfoCard from '$lib/components/info-card.svelte';
@@ -17,16 +22,20 @@
 
     const items = [{
         text: 'Broad experience in qualitative market research & moderation with healthcare professionals',
-        icon: 'https://placehold.co/64x64',
+        icon: leafIcon,
+        imgAlt: 'leaf icon'
     }, {
         text: 'Branching research excellence with a biomedical expertise',
-        icon: 'https://placehold.co/64x64',
+        icon: branchIcon,
+        imgAlt: 'branch icon'
     }, {
         text: 'Supported by blending and maximizing the unique benefits of qualitative and quantitative approaches',
-        icon: 'https://placehold.co/64x64',
+        icon: trunkIcon,
+        imgAlt: 'tree trunk icon'
     }, {
         text: 'Grounded in social science expertise, for \'rooting\' into the rationales of human behavior',
-        icon: 'https://placehold.co/64x64',
+        icon: rootsIcon,
+        imgAlt: 'tree roots icon'
     }];
 
     function scrollHandler() {
@@ -90,15 +99,21 @@
     <div class="md:flex md:flex-row-reverse md:w-max md:mx-auto md:gap-12">
         <img
             id={graphicId}
-            src="https://www.shutterstock.com/shutterstock/photos/87459215/display_1500/stock-vector-silhouettes-of-tree-with-its-roots-87459215.jpg"
-            alt="placeholder"
-            class="m-auto mb-12 md:mb-0 origin-top invert transition-all duration-700 max-w-72"
+            src={treeGraphic}
+            alt="tree graphic"
+            class="m-auto mb-12 md:mb-0 origin-top transition-all duration-700 max-w-72"
             style="width: {graphicScale * 80}%;"
         >
 
         <div class="max-w-96 md:my-auto mx-auto">
             {#each items as item, index}
-                <InfoCard text={item.text} image={item.icon} imageSize={48} noMarginBottom={index === items.length - 1} />
+                <InfoCard
+                    text={item.text}
+                    image={item.icon}
+                    imageSize={48}
+                    imageAlt={item.imgAlt}
+                    noMarginBottom={index === items.length - 1}
+                />
             {/each}
         </div>
     </div>

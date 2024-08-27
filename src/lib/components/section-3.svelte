@@ -6,15 +6,19 @@
     const items = [{
         text: 'Deep biochemical background',
         icon: 'https://placehold.co/64x64',
+        imgAlt: 'placeholder'
     }, {
         text: 'Understanding preferences, heuristics, and point of view of healthcare professionals',
         icon: 'https://placehold.co/64x64',
+        imgAlt: 'placeholder'
     }, {
         text: 'Comprehensive interviewing skills, including direct technical probing and indirect projective techniques',
         icon: 'https://placehold.co/64x64',
+        imgAlt: 'placeholder'
     }, {
         text: 'Background in pre-existing and emerging market dynamics',
         icon: 'https://placehold.co/64x64',
+        imgAlt: 'placeholder'
     }];
 </script>
 
@@ -37,7 +41,12 @@
 
             <div class="max-w-96">
                 {#each items as item}
-                    <InfoCard text={item.text} image={item.icon} imageSize={48} />
+                    <InfoCard
+                        text={item.text}
+                        image={item.icon}
+                        imageSize={48}
+                        imageAlt={item.imgAlt}
+                    />
                 {/each}
             </div>
         </div>
