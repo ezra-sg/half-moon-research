@@ -61,7 +61,7 @@
     }
 
 
-    // eztodo add throttle to scroll handler
+    // eztodo add throttle to scroll and mouse move handler
 
     function scrollHandler() {
         const scrollAmount = window?.scrollY ?? 0;
@@ -79,6 +79,14 @@
         }
 
         lastScrollTop = scrollAmount;
+    }
+
+    function mouseMoveHandler(event: MouseEvent) {
+        const mouseYPosition = event.clientY;
+
+        if (mouseYPosition < 200) {
+            navClass = navClasses;
+        }
     }
 
     function clickawayHandler(event: MouseEvent) {
@@ -117,6 +125,8 @@
         window?.addEventListener('scroll', scrollHandler);
 
         window?.addEventListener('click', clickawayHandler);
+
+        window?.addEventListener('mousemove', mouseMoveHandler);
 
         intersectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {

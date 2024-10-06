@@ -11,17 +11,17 @@
 
 <div id="section-1" class="p-4 mb-12 h-[100svh] max-w-[640px] mx-auto pt-16 flex items-center flex-col justify-center relative">
     <img
-        class="mb-10 max-w-96 self-start"
+        class="mb-10 max-w-96 self-start md:max-w-[480px]"
         src="{logo}"
         alt="Half-moon Research logo"
     />
 
-    <p class="text-white mb-4">
+    <p class="text-white text-xl mb-8 md:text-2xl">
         Half-Moon Research is a research consulting
-        firm that specializes in understanding <span class="font-bold">why</span>,
-        by <span class="font-bold">unifying qualitative and quantitative
-        approaches</span> - especially in the biomedical and
-        social sciences.
+        firm that specializes in <span class="font-bold">looking deeper</span>
+        to understand the <span class="font-bold">why</span>, thoughtfully
+        <span class="font-bold">unifying qualitative and quantitative insights</span> -
+        specializing in the biomedical and social sciences.
     </p>
 
     <hr class="w-[50%] text-glass border-glass bg-glass mb-4 self-start">

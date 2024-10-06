@@ -1,14 +1,14 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
 
-    import puzzleGraphic from '$lib/assets/graphic__puzzle.svg?raw';
+    import puzzleGraphic from '$lib/assets/graphic__puzzle-3.svg?raw';
 </script>
 
-<div id="section-4" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
+<div id="section-4" class="p-4 mb-12 md:min-h-[80vh] md:flex md:flex-col">
     <SectionHeader text="Working Together" />
 
     <p class="mb-8 max-w-xl mx-auto">
-        Half-Moon Research supports both targeted approaches and the full research process:
+        We support both targeted approaches and the full research process:
     </p>
 
     <div class="w-full max-w-md max-h-[28rem] mx-auto">

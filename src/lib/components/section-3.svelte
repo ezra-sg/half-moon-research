@@ -1,27 +1,31 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
     import QualQuantGraphic from '$lib/components/qual-quant-graphic.svelte';
-    import InfoCard from '$lib/components/info-card.svelte';
+
+
+    import bookIcon from '$lib/assets/icons__book.svg';
+    import networkIcon from '$lib/assets/icons__network.svg';
+    import keyIcon from '$lib/assets/icons__key.svg';
 
     const items = [{
         header: 'Strategic Learning',
-        text: 'Tight, focused, efficient immersion to onboard & upskill quickly in key treatment areas and topics.',
-        icon: 'https://placehold.co/64x64',
-        imgAlt: 'placeholder'
+        text: 'Tight, focused, efficient immersion to onboard & upskill quickly in key treatment areas and topics',
+        icon: bookIcon,
+        imgAlt: 'Book icon'
     }, {
         header: 'Connected Individualization',
-        text: 'Iterative understanding and integration of individual perspectives into the broader landscape.  Seeing the trees, the forest, and how they interrelate.',
-        icon: 'https://placehold.co/64x64',
-        imgAlt: 'placeholder'
+        text: 'Iterative understanding and integration of individual perspectives into the broader landscape—seeing the trees, the forest, and how they interrelate',
+        icon: networkIcon,
+        imgAlt: 'network icon'
     }, {
         header: 'Key Approaches',
-        text: 'Qual: Direct technical probing, agile adaptive follow-ups, innovative projective techniques, deployed with a warm, inviting affect that builds trust.<br><br>Quant: Data analytics, hypothesis testing, and visualization that tell the right story clearly & succinctly.',
-        icon: 'https://placehold.co/64x64',
-        imgAlt: 'placeholder'
+        text: 'Qual: Direct technical probing, agile adaptive follow-ups, innovative projective techniques, deployed with a warm, inviting affect that builds trust<br><br>Quant: Data analytics, hypothesis testing, and visualization that tell the right story clearly & succinctly',
+        icon: keyIcon,
+        imgAlt: 'key icon'
     }];
 </script>
 
-<div id="section-3" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
+<div id="section-3" class="p-4 mb-12 md:min-h-[80vh] md:flex md:flex-col">
     <SectionHeader text="Why Us?" />
 
     <p class="mb-8 md:mb-12 max-w-xl mx-auto">
@@ -39,7 +43,7 @@
                     <img
                         src={item.icon}
                         alt={item.imgAlt}
-                        class="self-start"
+                        class="self-start mt-1"
                     />
 
                     <div>

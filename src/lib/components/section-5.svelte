@@ -1,28 +1,32 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
+
+    import headshot from '$lib/assets/photo__jeff.jpg';
 </script>
 
-<div id="section-5" class="p-4 mb-12 md:h-[80vh] md:flex md:flex-col">
+<div id="section-5" class="p-4 mb-12 md:min-h-[80vh] md:flex md:flex-col">
     <SectionHeader text="About" />
 
-    <img src="https://placehold.co/150x150" class="mx-auto mb-10" />
+    <div class="flex items-center flex-col gap-10 md:flex-row md:justify-center">
+        <img
+            src={headshot}
+            class="mb-10 max-w-[300px] rounded-md md:mb-0"
+            alt="Headshot of Jeff Antsen"
+        />
 
-    <p class="mb-4 max-w-96 md:mx-auto">
-        I conduct qualitative market research,
-        specializing in applications for immunotherapies
-        and other novel mechanisms of action in solid
-        tumor oncology. My skillset combines business
-        consulting, behavioral psychology,
-        biochemistry, and objective interaction
-        management to learn nuanced insights from
-        healthcare professionals.
-    </p>
+        <div>
+            <p class="mb-4 max-w-96 md:mx-auto">
+                I conduct qualitative market research, specializing in the growing landscape of immuno-oncology,
+                targetable biomarkers, and novel mechanisms of action.  My skillset combines business consulting,
+                molecular biology, behavioral psychology, and interpersonal communication to learn nuanced insights
+                from healthcare professionals.
+            </p>
 
-    <p class="mb-4 max-w-96 md:mx-auto">
-        This allows respondents to see me as a
-        credible, objective, and empathetic interviewer,
-        which facilitates our ability to build a deeper
-        shared understanding of their priorities,
-        motivations, and concerns.
-    </p>
+            <p class="mb-4 max-w-96 md:mx-auto">
+                This allows MDs and other stakeholders to see me as a credible, objective, and empathic interviewer,
+                facilitating our joint ability to build a deeper shared understanding of treatment priorities,
+                motivations, and trade-offs.
+            </p>
+        </div>
+    </div>
 </div>
