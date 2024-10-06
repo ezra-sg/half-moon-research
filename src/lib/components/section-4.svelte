@@ -4,7 +4,7 @@
     import puzzleGraphic from '$lib/assets/graphic__puzzle-3.svg?raw';
 </script>
 
-<div id="section-4" class="p-4 mb-12 md:min-h-[80vh] md:flex md:flex-col">
+<div id="section-4" class="p-4 mb-12 md:flex md:flex-col">
     <SectionHeader text="Working Together" />
 
     <p class="mb-8 max-w-xl mx-auto">
