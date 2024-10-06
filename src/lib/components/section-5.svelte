@@ -4,7 +4,7 @@
     import headshot from '$lib/assets/photo__jeff.jpg';
 </script>
 
-<div id="section-5" class="p-4 mb-12 md:flex md:flex-col">
+<div id="section-5" class="p-4 mb-20 md:flex md:flex-col">
     <SectionHeader text="About" />
 
     <div class="flex items-center flex-col gap-10 md:flex-row md:justify-center">

@@ -47,7 +47,7 @@
     }
 </script>
 
-<div id="section-6" class="p-4 mb-12 md:flex md:flex-col">
+<div id="section-6" class="p-4 mb-20 md:flex md:flex-col">
     <SectionHeader text="Get in touch" />
 
     <div class="w-full max-w-[600px] mx-auto">
