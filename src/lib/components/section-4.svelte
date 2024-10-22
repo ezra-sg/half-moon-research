@@ -1,7 +1,7 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
 
-    import puzzleGraphic from '$lib/assets/graphic__puzzle-3.svg?raw';
+    import puzzleGraphic from '$lib/assets/graphic__puzzle-4.svg?raw';
 </script>
 
 <div id="section-4" class="p-4 mb-20 md:flex md:flex-col">

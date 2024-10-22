@@ -1,7 +1,7 @@
 <script lang="ts">
     import SectionHeader from '$lib/components/section-header.svelte';
 
-    import headshot from '$lib/assets/photo__jeff.jpg';
+    import headshot from '$lib/assets/photo__jeff.png';
 </script>
 
 <div id="section-5" class="p-4 mb-20 md:flex md:flex-col">
@@ -22,7 +22,7 @@
                 from healthcare professionals.
             </p>
 
-            <p class="mb-4 max-w-96 md:mx-auto">
+            <p class="mb-4 max-w-96 md:mx-auto md:mb-0">
                 This allows MDs and other stakeholders to see me as a credible, objective, and empathic interviewer,
                 facilitating our joint ability to build a deeper shared understanding of treatment priorities,
                 motivations, and trade-offs.
