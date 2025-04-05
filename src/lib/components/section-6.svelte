@@ -51,6 +51,10 @@
     <SectionHeader text="Get in touch" />
 
     <div class="w-full max-w-[600px] mx-auto">
+        <p class="mb-6">
+            We'd love to hear from you! Send an email to <a href="mailto:query@halfmoonresearch.com" class="text-dragonfly">query@halfmoonresearch.com</a>, or use the form below
+        </p>
+
         <div class="mb-4">
             <TextInput label="Name" id="contact-form-name" bind:value={$name} />
         </div>
