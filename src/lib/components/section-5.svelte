@@ -15,17 +15,17 @@
         />
 
         <div>
-            <p class="mb-4 max-w-96 md:mx-auto">
-                I conduct qualitative market research, specializing in the growing landscape of immuno-oncology,
-                targetable biomarkers, and novel mechanisms of action.  My skillset combines business consulting,
-                molecular biology, behavioral psychology, and interpersonal communication to learn nuanced insights
-                from healthcare professionals.
+            <p class="mb-4 max-w-96 md:mx-auto text-pretty">
+                Jeff advances research innovation with a focus on qualitative investigation in the evolving fields of immuno-oncology,
+                targetable biomarkers, and novel mechanisms of action. He brings a multidisciplinary skillset that blends business consulting,
+                molecular biology, behavioral psychology, and interpersonal communication—enabling him to uncover nuanced insights from healthcare
+                professionals.
             </p>
 
-            <p class="mb-4 max-w-96 md:mx-auto md:mb-0">
-                This allows MDs and other stakeholders to see me as a credible, objective, and empathic interviewer,
-                facilitating our joint ability to build a deeper shared understanding of treatment priorities,
-                motivations, and trade-offs.
+            <p class="mb-4 max-w-96 md:mx-auto md:mb-0 text-pretty">
+                His credibility, objectivity, and empathy as an interviewer make him a trusted partner to physicians and other key stakeholders,
+                helping foster a deeper, shared understanding of treatment priorities, motivations, and trade-offs.
+                Jeff holds a PhD in Political Science from Temple University (2019) and a Master of Bioethics from the University of Pennsylvania (2013).
             </p>
         </div>
     </div>

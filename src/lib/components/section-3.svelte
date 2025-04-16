@@ -9,19 +9,19 @@
 
     const items = [{
         header: 'Strategic Learning',
-        text: 'Tight, focused, efficient immersion to onboard & upskill quickly in key treatment areas and topics',
+        text: 'Tight, focused, efficient immersion to onboard & upskill quickly in key issues, treatment areas, stakeholders, and research goals',
         icon: bookIcon,
         imgAlt: 'Book icon'
     }, {
-        header: 'Connected Individualization',
+        header: 'Analytic Synergy',
+        text: 'Qual: In-depth interviews driven by strategic probing, agile and adaptive follow-ups, and innovative projective techniques - delivered with a warm, inviting affect that builds trust<br><br>Quant: Data analytics, hypothesis testing, and visualization that tell the right story clearly & succinctly',
+        icon: keyIcon,
+        imgAlt: 'key icon'
+    }, {
+        header: 'Connected Individualism',
         text: 'Iterative understanding and integration of individual perspectives into the broader landscape—seeing the trees, the forest, and how they interrelate',
         icon: networkIcon,
         imgAlt: 'network icon'
-    }, {
-        header: 'Key Approaches',
-        text: 'Qual: Direct technical probing, agile adaptive follow-ups, innovative projective techniques, deployed with a warm, inviting affect that builds trust<br><br>Quant: Data analytics, hypothesis testing, and visualization that tell the right story clearly & succinctly',
-        icon: keyIcon,
-        imgAlt: 'key icon'
     }];
 </script>
 
@@ -29,7 +29,7 @@
     <SectionHeader text="Why Us?" />
 
     <p class="mb-8 md:mb-12 max-w-xl mx-auto">
-        Half-Moon Research excels at balancing understanding both <span class="font-bold">what</span> and <span class="font-bold">why</span> by unifying expertise over the entire landscape.
+        Half-Moon Research excels at understanding outcomes&mdash;the 'what'&mdash;and the reasons behind them&mdash;the 'why'&mdash;by combining deep knowledge with carefully chosen methods.
     </p>
 
     <div class="md:flex md:flex-row-reverse md:justify-center md:gap-12">
@@ -51,7 +51,7 @@
                             { item.header }
                         </h3>
 
-                        <p>
+                        <p class="text-pretty">
                             {@html item.text}
                         </p>
                     </div>

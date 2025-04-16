@@ -13,7 +13,7 @@
         icon: leafIcon,
         imgAlt: 'leaf icon'
     }, {
-        text: 'Branching excellence in communication, molecular biology, social psychology',
+        text: 'Branching excellence in professional, attuned communication, cell / molecular biology biology, social psychology',
         icon: branchIcon,
         imgAlt: 'branch icon'
     }, {
@@ -21,7 +21,7 @@
         icon: trunkIcon,
         imgAlt: 'tree trunk icon'
     }, {
-        text: 'Grounded in social science expertise, for \'rooting\' into the rationales of human behavior',
+        text: 'Grounded in social science expertise, for \'digging\' into the rationales of human behavior',
         icon: rootsIcon,
         imgAlt: 'tree roots icon'
     }];
